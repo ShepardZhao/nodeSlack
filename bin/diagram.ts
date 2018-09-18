@@ -1,3 +1,11 @@
+/**
+ * @author shepard.zhao
+ * @email zhaoxun321@gmail.com
+ * @create date 2018-09-18 16:05:34
+ * @modify date 2018-09-18 16:05:34
+ * @desc [description]
+*/
+
 import * as exporter from "highcharts-export-server";
 import * as base64Img from "base64-img";
 

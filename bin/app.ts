@@ -1,6 +1,6 @@
 /**
- * @author xunzhao
- * @email xunzhao@ebay.com
+ * @author shepard.zhao
+ * @email zhaoxun321@gmail.com
  * @create date 2018-09-03 02:25:23
  * @modify date 2018-09-03 02:25:23
  * @desc [description]
@@ -25,10 +25,10 @@ class App {
    * @param socketUrl
    * @param slackToken
    */
-  constructor(socketUrl: string, slackToken: string, metricUrl: string) {
+  constructor(socketUrl: string, slackToken: string) {
     this.socketClient = new SocketClient(socketUrl);
     this.slack = new Slack(slackToken);
-    this.metrics = new Metrics(metricUrl, this.slack);
+    this.metrics = new Metrics(socketUrl, this.slack);
   }
 
   /**
@@ -101,7 +101,7 @@ class App {
 // main
 try {
 
-  const app = new App(urlConfig!.slackUrl, urlConfig!.slackBotToken, urlConfig!.metricUrl); // slack token
+  const app = new App(urlConfig!.slackUrl, urlConfig!.slackBotToken); // slack token
 
   // start listen socket response message
   app.onListenSocket();

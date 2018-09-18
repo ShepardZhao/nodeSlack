@@ -1,6 +1,4 @@
-FROM ecr.vip.ebayc3.com/ibot/ibot-slacker
-
-ARG ENV=dev
+FROM shepard/ubuntu-node
 
 RUN apt-get update
 RUN apt-get install -y locales locales-all vim nano wget curl libfontconfig

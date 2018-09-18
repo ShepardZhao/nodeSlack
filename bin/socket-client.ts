@@ -1,10 +1,10 @@
 /**
- * @author xunzhao
- * @email xunzhao@ebay.com
- * @create date 2018-09-03 02:25:31
- * @modify date 2018-09-03 02:25:31
+ * @author shepard.zhao
+ * @email zhaoxun321@gmail.com
+ * @create date 2018-09-18 16:05:34
+ * @modify date 2018-09-18 16:05:34
  * @desc [description]
- */
+*/
 import * as io from "socket.io-client";
 import { Socket } from "dgram";
 
