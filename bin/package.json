@@ -1,0 +1,25 @@
+{
+  "name": "slack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "slack.js",
+  "dependencies": {
+    "@slack/client": "^4.6.0",
+    "axios": "^0.18.0",
+    "base64-img": "^1.0.4",
+    "console.table": "^0.10.0",
+    "highcharts-export-server": "^2.0.15",
+    "lodash": "^4.17.10",
+    "node-slack-upload": "^1.2.1",
+    "qa": "0.0.1",
+    "socket.io-client": "^2.1.1"
+  },
+  "devDependencies": {
+    "@types/socket.io-client": "^1.4.32"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
